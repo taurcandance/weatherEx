@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+        <title>{% block title %}{{ title_name }}{% endblock %}</title>
+        <link rel="stylesheet" href="/css/base_style.css">
+    {% block javascripts %}
+        <script type="text/javascript" src="jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="scripts.js"></script>
+    {% endblock %}
+    {% endblock %}
+</head>
+
+<body>{% block body %}
+    <div class="wrapper">
+        {% block content %}
+            <h3>{{ form_name }} {% if city == true %} для {% endif %}{{ city.name }}</h3>
+            <form action="/index.php" method="get" class="registration">
+
+                <span>City</span><br />
+                <input name="city" placeholder="Berlin" value="{{ city.name }}">
+
+                <input type="submit" name="" value="Показать" class="registration-button"/>
+            </form>
+
+        {% if city == true %}
+            <p> город: {{ city.name }} </p>
+            <p> кратко: {{ city.weather.0.description }} </p>
+            <p> температура {{ temp }} C </p>
+            <p> скорость ветра {{ city.wind.speed }} m/s </p>
+            <p> давление  {{ city.main.pressure }} hPa </p>
+            <p> влажность  {{ city.main.humidity }} % </p>
+            <p> облачность {{ city.clouds.all }} % </p>
+            {% if rain != null %}<p> объём дождя за последние 3 часа {{ rain }} </p>{% endif %}
+            <p> восход солнца {{ sunrise }} </p>
+            <p> заход солнца {{ sunset }} </p>
+        {% endif %}
+
+        {% endblock %}
+    </div>
+{% endblock %}</body>
+</html>

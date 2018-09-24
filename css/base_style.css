@@ -1,0 +1,60 @@
+* {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 550px;
+    color: #050505;
+}
+
+.registration {
+    background: #fbf9fa;
+    color: #110f10;
+    border: 2px solid #f9f7f8;
+    border-radius: 8px;
+    padding: 30px 35px;
+    box-shadow: 0 0 0 2px #fbf9fa;
+
+}
+
+.registration span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.registration input, .registration .tournament {
+    width: 100%;
+
+}
+
+.registration input, .registration select {
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 35px;
+    border: 2px solid;
+    border-color: #d2d0d1;
+    font-size: 19px;
+}
+
+.registration .registration-button {
+    margin-top: 25px;
+    margin-bottom: 0;
+    width: 215px;
+    height: 55px;
+    border-radius: 4px;
+    border-color: #f8073a;
+    background: linear-gradient(to right, #f8073a, #ff0160);
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
