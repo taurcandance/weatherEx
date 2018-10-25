@@ -7,7 +7,8 @@ if ( !$_GET['city'] )
 {
     echo $twig->render('index.html.twig', array(
         'title_name' => 'Прогноз погоды',
-        'form_name' => 'Прогноз погоды' ));
+        'form_name' => 'Прогноз погоды' )
+    );
 }
 else
 {
@@ -25,5 +26,6 @@ else
         'sunrise' => $sunRise,
         'sunset' => $sunSet,
         'temp' => $temp,
-        'rain' => $rain));
+        'rain' => $rain)
+    );
 }
