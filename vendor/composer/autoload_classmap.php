@@ -6,4 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'SessionState\\SessionState' => $baseDir . '/SessionState/SessionState.php',
 );

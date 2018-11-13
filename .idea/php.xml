@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="PhpProjectServersManager">
+    <servers>
+      <server host="weather" id="ee3e3eb5-3d43-481f-bcc1-f6140d8c21c3" name="weather" />
+    </servers>
+  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
 </project>

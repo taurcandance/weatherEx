@@ -1,5 +1,9 @@
 {
-    "require": {
-        "twig/twig": "^2.0"
-    }
+  "require": {
+    "twig/twig": "^2.0"
+  },
+
+  "autoload": {
+    "classmap": ["SessionState/"]
+  }
 }

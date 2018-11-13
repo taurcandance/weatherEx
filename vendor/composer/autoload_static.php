@@ -48,12 +48,17 @@ class ComposerStaticInit0d6a43b33c6fe4c2d2b60718a267e830
         ),
     );
 
+    public static $classMap = array (
+        'SessionState\\SessionState' => __DIR__ . '/../..' . '/SessionState/SessionState.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit0d6a43b33c6fe4c2d2b60718a267e830::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit0d6a43b33c6fe4c2d2b60718a267e830::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit0d6a43b33c6fe4c2d2b60718a267e830::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit0d6a43b33c6fe4c2d2b60718a267e830::$classMap;
 
         }, null, ClassLoader::class);
     }
