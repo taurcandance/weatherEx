@@ -7,7 +7,7 @@ $twig   = new Twig_Environment($loader);
 $twig->addExtension(new Twig_Extension_StringLoader());
 
 if ( ! $cacheTemplateString = $memcacheObj->get('main_template')) {
-    $fp                 = fopen('templates/index.html.twig', 'r');  // TODO : add checked file exist
+    $fp                 = fopen('templates/index.html.twig', 'r');
     $stringPageTemplate = fread($fp, filesize('templates/index.html.twig'));
     fclose($fp);
     $memcacheObj->add('main_template', $stringPageTemplate);
@@ -23,18 +23,18 @@ if ( ! $_GET['city']) {
     $templateIndexPage = $twig->createTemplate($cacheTemplateString);
     echo $templateIndexPage->render($output_array);
 } else {
-    require_once 'weatherApi.php';  // TODO : add checked user input $_GET[]
+    require_once 'weatherApi.php';
 
     $session = new \SessionState\SessionState();
     $session->save(2880, 2880, 1000);
 
-    if ($error_conn) {  // TODO : $error_conn initialized in 'weatherApi.php'
+    if ($error_conn) {
         echo $error_conn;
 
         return;
     }
 
-    $sunRise = date('d-m-Y h:i:s', $infoWeather['sys']['sunrise']); // TODO : $error_conn initialized in 'weatherApi.php'
+    $sunRise = date('d-m-Y h:i:s', $infoWeather['sys']['sunrise']);
     $sunSet  = date('d-m-Y h:i:s', $infoWeather['sys']['sunset']);
     $temp    = $infoWeather['main']['temp'] - 273.15;
     $rain    = $infoWeather['rain']['3h'];

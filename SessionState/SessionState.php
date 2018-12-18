@@ -6,10 +6,10 @@ namespace SessionState;
 
     class SessionState
     {
-        public $cookieLifetime;
-        public $sessionLifetime;
-        public $sessionGcDivisor;
-        public $sessionSavePath;
+        private $cookieLifetime;
+        private $sessionLifetime;
+        private $sessionGcDivisor;
+        private $sessionSavePath;
 
         function __construct()
         {
@@ -26,8 +26,7 @@ namespace SessionState;
                     mkdir($sessionSavePath, 0777);
                     ini_set('session.save_path', $sessionSavePath);
                 }
-            }
-            else{
+            } else {
                 if (file_exists($this->sessionSavePath) == false) {
                     mkdir($this->sessionSavePath, 0777);
                 }
@@ -46,7 +45,7 @@ namespace SessionState;
                 ini_set('session.gc_maxlifetime', $this->sessionLifetime);
             }
 
-            if ( ! is_null($sessionGcDivisor) && $sessionGcDivisor >= 1 && $sessionGcDivisor <= 1000000) {
+            if ( ! is_null($sessionGcDivisor) && $sessionGcDivisor >= 10 && $sessionGcDivisor <= 1000000) {
                 ini_set('session.gc_divisor', $sessionGcDivisor);
             } else {
                 ini_set('session.gc_divisor', $this->sessionGcDivisor);

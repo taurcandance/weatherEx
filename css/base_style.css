@@ -15,7 +15,6 @@
     border-radius: 8px;
     padding: 30px 35px;
     box-shadow: 0 0 0 2px #fbf9fa;
-
 }
 
 .registration span {
@@ -25,7 +24,6 @@
 
 .registration input, .registration .tournament {
     width: 100%;
-
 }
 
 .registration input, .registration select {
