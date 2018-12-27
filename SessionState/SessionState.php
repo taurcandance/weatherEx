@@ -19,7 +19,7 @@ namespace SessionState;
             $this->sessionGcDivisor = 100;
         }
 
-        public function save(int $cookieLifetime = null, int $sessionLifetime = null, int $sessionGcDivisor = null, $sessionSavePath = null)
+        public function setIniParams(int $cookieLifetime = null, int $sessionLifetime = null, int $sessionGcDivisor = null, $sessionSavePath = null)
         {
             if ( ! is_null($sessionSavePath)) {
                 if (file_exists($sessionSavePath) == false) {
@@ -50,24 +50,17 @@ namespace SessionState;
             } else {
                 ini_set('session.gc_divisor', $this->sessionGcDivisor);
             }
+        }
 
+        public function init()
+        {
             session_start();
+        }
 
-            if ($_GET['city'] && ! is_null($_GET['city'])) {
-                $_SESSION['last_city'] = $_GET['city'];
-            }
-
+        public function close()
+        {
             session_write_close();
         }
 
-        public function getLastCity()
-        {
-            session_start();
-            if ($_SESSION['last_city']) {
-                return $_SESSION['last_city'];
-            } else {
-                return false;
-            }
-        }
     }
 }

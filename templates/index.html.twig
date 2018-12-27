@@ -21,7 +21,7 @@
                 <input name="city" placeholder="Berlin" value="{{ city.name }}">
                 <input type="submit" name="" value="Show" class="registration-button"/>
             </form>
-            {% if city == true %}
+            {% if city.wind == true %}
                 <p> город: {{ city.name }} </p>
                 <p> кратко: {{ city.weather.0.description }} </p>
                 <p> температура {{ temp }} C </p>
