@@ -3,7 +3,7 @@ require_once 'InfoWeather\InfoWeather.php';
 
 use InfoWeather\InfoWeather;
 
-function queryWeather($city)
+function queryWeatherFromResourceApi($city)
 {
     $appId    = "233ba77fcc5b0f257350ddae875de7fb";
     $lang     = 'ru';
@@ -37,14 +37,15 @@ function getTemplateMain($memcacheObj)
 
 function queryAndRenderWeather($twig, $cacheTemplateString, $city)
 {
-    $result = queryWeather($city);
+        //  TODO: если нет в памяти отдали мин.контент
+    $result = queryWeatherFromResourceApi($city);
 
     if ( ! is_null($result->error)) {
-        getMinContent($twig, $cacheTemplateString, $result->error);
+        showMinContent($twig, $cacheTemplateString, $result->error);
 
         return;
     }
-    getMaxContent($result->response, $twig, $cacheTemplateString);
+    showMaxContent($result->response, $twig, $cacheTemplateString);
 }
 
 function renderMain($twig, $cacheTemplateString)
@@ -61,7 +62,7 @@ function renderMain($twig, $cacheTemplateString)
         return;
     }
 
-    getMinContent($twig, $cacheTemplateString, null);
+    showMinContent($twig, $cacheTemplateString, null);
 }
 
 function giveTemplateFromFile()
@@ -73,7 +74,7 @@ function giveTemplateFromFile()
     return $stringPageTemplate;
 }
 
-function getMinContent($twig, $cacheTemplateString, $errorMessage = null)
+function showMinContent($twig, $cacheTemplateString, $errorMessage = null)
 {
     if ( ! is_null($errorMessage)) {
         $cityInfoArray['name'] = $errorMessage;
@@ -91,7 +92,7 @@ function getMinContent($twig, $cacheTemplateString, $errorMessage = null)
     echo $templateIndexPage->render($output_array);
 }
 
-function getMaxContent(array $infoWeather, $twig, $cacheTemplateString)
+function showMaxContent(array $infoWeather, $twig, $cacheTemplateString)
 {
     $sunRise = date('d-m-Y h:i:s', $infoWeather['sys']['sunrise']);
     $sunSet  = date('d-m-Y h:i:s', $infoWeather['sys']['sunset']);

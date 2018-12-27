@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ec4ca5b-42a9-4bc7-ad31-5d9a56260a39" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/InfoWeather/InfoWeather.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectMemcacheServer.php" beforeDir="false" afterPath="$PROJECT_DIR$/connectMemcacheServer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherApi.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,20 +20,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+                <state relative-caret-position="342">
+                  <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="connectMemcacheServer.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="connectMemcacheServer.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/connectMemcacheServer.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="19">
-                  <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+                  <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -44,7 +42,7 @@
             <entry file="file://$PROJECT_DIR$/InfoWeather/InfoWeather.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="38">
-                  <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+                  <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -56,8 +54,8 @@
           <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/functions.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="627">
-                  <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+                <state relative-caret-position="-619">
+                  <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
                 </state>
               </provider>
             </entry>
@@ -106,12 +104,12 @@
         <option value="$PROJECT_DIR$/css/base_style.css" />
         <option value="$PROJECT_DIR$/dataSourse.php" />
         <option value="$PROJECT_DIR$/templates/index.html.twig" />
-        <option value="$PROJECT_DIR$/connectMemcacheServer.php" />
         <option value="$PROJECT_DIR$/SessionState/SessionState.php" />
         <option value="$PROJECT_DIR$/weatherApi.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/InfoWeather/InfoWeather.php" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/connectMemcacheServer.php" />
       </list>
     </option>
   </component>
@@ -266,6 +264,8 @@
       <workItem from="1545910424980" duration="8106000" />
       <workItem from="1545931012331" duration="1211000" />
       <workItem from="1545933546612" duration="5792000" />
+      <workItem from="1545939581772" duration="968000" />
+      <workItem from="1545944517040" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="first position commits">
       <created>1537469680238</created>
@@ -358,11 +358,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545917463183</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="2.6 refactoring">
+      <created>1545939802109</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1545939802109</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107156000" />
+    <option name="totallyTimeSpent" value="108171000" />
   </component>
   <component name="TodoView" selected-index="3" />
   <component name="ToolWindowManager">
@@ -426,7 +433,8 @@
     <MESSAGE value="add work with memcache(main template always in cache)&#10;add sessions" />
     <MESSAGE value=")" />
     <MESSAGE value="2.0 handler memcache and sessions" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0 handler memcache and sessions" />
+    <MESSAGE value="2.6 refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.6 refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -541,20 +549,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weatherApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/weatherApi.php" />
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -597,31 +592,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connectMemcacheServer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InfoWeather/InfoWeather.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="342">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-619">
+          <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connectMemcacheServer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
         </state>
       </provider>
     </entry>
