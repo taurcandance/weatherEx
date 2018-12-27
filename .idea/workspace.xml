@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ec4ca5b-42a9-4bc7-ad31-5d9a56260a39" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InfoWeather/InfoWeather.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SessionState/SessionState.php" beforeDir="false" afterPath="$PROJECT_DIR$/SessionState/SessionState.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connectMemcacheServer.php" beforeDir="false" afterPath="$PROJECT_DIR$/connectMemcacheServer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/weatherApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherApi.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +25,8 @@
           <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="218">
-                  <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+                <state relative-caret-position="323">
+                  <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
                 </state>
               </provider>
             </entry>
@@ -42,65 +40,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Template.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Template.php">
+          <file leaf-file-name="InfoWeather.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/InfoWeather/InfoWeather.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="7125">
-                  <caret line="383" selection-start-line="383" selection-end-line="383" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Environment.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Environment.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="420" selection-start-line="420" selection-end-line="420" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ExtensionSet.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/ExtensionSet.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="6517">
-                  <caret line="350" selection-start-line="350" selection-end-line="350" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ClassLoader.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="218">
-                  <caret line="412" selection-start-line="412" selection-end-line="412" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_superglobals.php" pinned="false" current-in-tab="false">
-            <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3287">
-                  <caret line="173" selection-start-line="173" selection-end-line="173" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="autoload.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="114">
-                  <caret line="6" selection-start-line="6" selection-end-line="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="weatherApi.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/weatherApi.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="304">
-                  <caret line="16" selection-start-line="16" selection-end-line="16" />
+                <state relative-caret-position="38">
+                  <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -109,29 +53,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/functions.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
-                  <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="weatherApi.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/weatherApi.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="76">
-                  <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SessionState.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/SessionState/SessionState.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="446">
-                  <caret line="65" selection-start-line="65" selection-end-line="65" />
+                <state relative-caret-position="627">
+                  <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -139,7 +65,7 @@
           <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/index.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="261">
+                <state relative-caret-position="570">
                   <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
                 </state>
               </provider>
@@ -180,11 +106,12 @@
         <option value="$PROJECT_DIR$/css/base_style.css" />
         <option value="$PROJECT_DIR$/dataSourse.php" />
         <option value="$PROJECT_DIR$/templates/index.html.twig" />
-        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/connectMemcacheServer.php" />
-        <option value="$PROJECT_DIR$/weatherApi.php" />
         <option value="$PROJECT_DIR$/SessionState/SessionState.php" />
+        <option value="$PROJECT_DIR$/weatherApi.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/InfoWeather/InfoWeather.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
       </list>
     </option>
   </component>
@@ -246,9 +173,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../modules/php/PHP-7.2-x64/ext/php_xdebug.dll" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -336,7 +263,9 @@
       <workItem from="1545479575331" duration="10000" />
       <workItem from="1545480391618" duration="732000" />
       <workItem from="1545823688607" duration="1958000" />
-      <workItem from="1545910424980" duration="6763000" />
+      <workItem from="1545910424980" duration="8106000" />
+      <workItem from="1545931012331" duration="1211000" />
+      <workItem from="1545933546612" duration="5792000" />
     </task>
     <task id="LOCAL-00001" summary="first position commits">
       <created>1537469680238</created>
@@ -422,28 +351,35 @@
       <option name="project" value="LOCAL" />
       <updated>1545164304777</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2.0 handler memcache and sessions">
+      <created>1545917463183</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1545917463183</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98810000" />
+    <option name="totallyTimeSpent" value="107156000" />
   </component>
   <component name="TodoView" selected-index="3" />
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1578125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1578125" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32978722" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.16454352" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39787233" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3425532" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39787233" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -489,7 +425,8 @@
     <MESSAGE value="2st commit" />
     <MESSAGE value="add work with memcache(main template always in cache)&#10;add sessions" />
     <MESSAGE value=")" />
-    <option name="LAST_COMMIT_MESSAGE" value=")" />
+    <MESSAGE value="2.0 handler memcache and sessions" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0 handler memcache and sessions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -497,39 +434,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/weatherApi.php" />
     <entry file="file://$PROJECT_DIR$/templates/index.html.twig" />
     <entry file="file://$PROJECT_DIR$/index.php" />
     <entry file="file://$PROJECT_DIR$/city.list.json" />
-    <entry file="file://$PROJECT_DIR$/dataSourse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSourse.php" />
     <entry file="file://$PROJECT_DIR$/templates/index.html.twig" />
     <entry file="file://$PROJECT_DIR$/weatherApi.php" />
     <entry file="file://$PROJECT_DIR$/index.php" />
     <entry file="file://$PROJECT_DIR$/city.list.json" />
-    <entry file="file://$PROJECT_DIR$/dataSourse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSourse.php" />
     <entry file="file://$PROJECT_DIR$/weatherApi.php" />
     <entry file="file://$PROJECT_DIR$/templates/index.html.twig" />
     <entry file="file://$PROJECT_DIR$/index.php" />
     <entry file="file://$PROJECT_DIR$/city.list.json" />
-    <entry file="file://$PROJECT_DIR$/dataSourse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSourse.php" />
     <entry file="file://$PROJECT_DIR$/weatherApi.php" />
     <entry file="file://$PROJECT_DIR$/templates/index.html.twig" />
     <entry file="file://$PROJECT_DIR$/city.list.json" />
@@ -602,13 +520,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataSourse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dataSourse.php" />
     <entry file="file://$PROJECT_DIR$/my_ext.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -616,6 +528,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Reflection/Reflection.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SessionState/SessionState.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weatherApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -628,32 +564,36 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3287">
+        <state relative-caret-position="877">
           <caret line="173" selection-start-line="173" selection-end-line="173" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Reflection/Reflection.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="877">
+          <caret line="412" selection-start-line="412" selection-end-line="412" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/ExtensionSet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6517">
+        <state relative-caret-position="877">
           <caret line="350" selection-start-line="350" selection-end-line="350" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Environment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="877">
+          <caret line="420" selection-start-line="420" selection-end-line="420" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7125">
+        <state relative-caret-position="877">
           <caret line="383" selection-start-line="383" selection-end-line="383" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -664,45 +604,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Environment.php">
+    <entry file="file://$PROJECT_DIR$/InfoWeather/InfoWeather.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="420" selection-start-line="420" selection-end-line="420" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="412" selection-start-line="412" selection-end-line="412" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weatherApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="38">
+          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SessionState/SessionState.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="627">
+          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+        <state relative-caret-position="323">
+          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
         </state>
       </provider>
     </entry>
