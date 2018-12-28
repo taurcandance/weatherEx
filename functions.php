@@ -20,16 +20,16 @@ function queryWeatherFromResourceApi($city)
     return new InfoWeather($infoWeather, null);
 }
 
-function getTemplateMain($memcacheObj)
+function getTemplateMain($redisObj)
 {
-    if ( ! $memcacheObj) {
+    if ( ! $redisObj) {
         return giveTemplateFromFile();
     }
-    $cacheTemplateString = $memcacheObj->get('main_template');
+    $cacheTemplateString = $redisObj->get('main_template');
 
     if ( ! $cacheTemplateString) {
         $cacheTemplateString = giveTemplateFromFile();
-        $memcacheObj->add('main_template', $cacheTemplateString);
+        $redisObj->set('main_template', $cacheTemplateString);
     }
 
     return $cacheTemplateString;
@@ -37,7 +37,7 @@ function getTemplateMain($memcacheObj)
 
 function queryAndRenderWeather($twig, $cacheTemplateString, $city)
 {
-        //  TODO: если нет в памяти отдали мин.контент
+        //  TODO: если нет в памяти отдать мин.контент
     $result = queryWeatherFromResourceApi($city);
 
     if ( ! is_null($result->error)) {

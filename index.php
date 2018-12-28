@@ -1,6 +1,6 @@
 <?php
 require_once 'vendor/autoload.php';
-require_once 'connectMemcacheServer.php';
+require_once 'connectRedisServer.php';
 require_once 'functions.php';
 
 
@@ -12,7 +12,7 @@ $loader = new Twig_Loader_Filesystem('templates');
 $twig   = new Twig_Environment($loader);
 $twig->addExtension(new Twig_Extension_StringLoader());
 
-$cacheTemplateString = getTemplateMain($memcacheObj);
+$cacheTemplateString = getTemplateMain($redisObj);
 
 $session->init();
 renderMain($twig, $cacheTemplateString);
