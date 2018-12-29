@@ -50,7 +50,8 @@ function queryAndRenderWeather($twig, $cacheTemplateString, $city)
 
 function renderMain($twig, $cacheTemplateString)
 {
-    if ($_GET['city']) {
+    if (@$_GET['city']) {
+        $_SESSION['lastCity'] = $_GET['city'];
         queryAndRenderWeather($twig, $cacheTemplateString, $_GET['city']);
 
         return;
@@ -97,7 +98,7 @@ function showMaxContent(array $infoWeather, $twig, $cacheTemplateString)
     $sunRise = date('d-m-Y h:i:s', $infoWeather['sys']['sunrise']);
     $sunSet  = date('d-m-Y h:i:s', $infoWeather['sys']['sunset']);
     $temp    = $infoWeather['main']['temp'] - 273.15;
-    $rain    = $infoWeather['rain']['3h'];
+    @$rain    = $infoWeather['rain']['3h'];
 
     $templateIndexPage = $twig->createTemplate($cacheTemplateString);
     echo $templateIndexPage->render(
